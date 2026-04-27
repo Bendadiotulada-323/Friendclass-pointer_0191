@@ -9,3 +9,18 @@ class mahasiswa{
     }
 };
 
+int main()
+{
+    mahasiswa mhs;
+    mhs.nim = 1;
+    mhs.shownim();
+
+    mahasiswa &refmhs = mhs;
+    refmhs.nim = 2;
+    mhs.shownim();
+
+    mahasiswa *pmhs = &mhs;
+    pmhs->nim = 3;
+    pmhs->shownim();
+    return 0;
+}
