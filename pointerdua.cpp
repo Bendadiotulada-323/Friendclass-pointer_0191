@@ -11,3 +11,11 @@ void shownim(int nim)
     }
 };
 
+int main()
+{
+    mahasiswa *mhs = new mahasiswa();// pointer object mhs
+    mhs->nim = 2;
+    mhs->shownim(mhs->nim);
+    delete mhs;
+    return 0;
+}
