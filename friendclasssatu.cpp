@@ -36,5 +36,14 @@ void siswa::setid(int pid)
     id = pid;
 }
 
+int main()
+{
+    orang joko;
+    joko.setnama("joko");
+    siswa joko_siswa;
+    joko_siswa.setid(1);
+    joko_siswa.displayall(joko);
+    return 0;
+}
 
 
