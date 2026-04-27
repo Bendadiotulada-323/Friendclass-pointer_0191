@@ -67,3 +67,33 @@ void LayangLayang::output()
     cout << "Keliling: " << Keliling() << endl;
 }
 
+void BelahKetupat::input()
+{
+    cout << "\n=== Input Belah Ketupat ===" << endl;
+    cout << "Masukkan diagonal 1: ";
+    cin >> d1;
+    cout << "Masukkan diagonal 2: ";
+    cin >> d2;
+    cout << "Masukkan panjang sisi: ";
+    cin >> sisi;
+}
+
+float BelahKetupat::Luas()
+{
+    return (d1 * d2) / 2;
+}
+
+float BelahKetupat::Keliling()
+{
+    return 4 * sisi;
+}
+
+void BelahKetupat::output()
+{
+    cout << "\n=== Output Belah Ketupat ===" << endl;
+    cout << "Diagonal 1: " << d1 << endl;
+    cout << "Diagonal 2: " << d2 << endl;
+    cout << "Sisi: " << sisi << endl;
+    cout << "Luas: " << Luas() << endl;
+    cout << "Keliling: " << Keliling() << endl;
+}
